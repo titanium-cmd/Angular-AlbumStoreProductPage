@@ -4,10 +4,9 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class ProductService {
-  private _http: Http;
   private _albumUrl : '../assets/album.json';
 
-  constructor() {
+  constructor(private _http: Http) {
 
    }
    getAlbum(id: number){
